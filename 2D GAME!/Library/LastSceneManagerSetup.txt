@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/LEVELS/Lv1.unity
+- path: Assets/Knight Files/Demo.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
