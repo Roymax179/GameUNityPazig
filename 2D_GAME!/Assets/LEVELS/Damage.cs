@@ -49,6 +49,10 @@ public class Damage : MonoBehaviour
     public void AddHP(int value)
     {
         currentHealth += value;
+        if(currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
         healthbar.SetHealth(currentHealth);
     }
     private IEnumerator Invunerability()
@@ -57,9 +61,9 @@ public class Damage : MonoBehaviour
         for(int i = 0; i < Vietnameseflasback; i++)
         {
             spriteRender.color = new Color(1, 0, 0, 0.5f);
-            yield return new WaitForSeconds(invulnerabilitiDuration/(Vietnameseflasback * 2));
+            yield return new WaitForSeconds(invulnerabilitiDuration/(Vietnameseflasback*2));
             spriteRender.color = Color.white;
-            yield return new WaitForSeconds(invulnerabilitiDuration / (Vietnameseflasback * 2));
+            yield return new WaitForSeconds(invulnerabilitiDuration / (Vietnameseflasback*2));
         }
 
         Physics2D.IgnoreLayerCollision(8, 9, false);
