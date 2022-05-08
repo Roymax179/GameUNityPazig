@@ -12,6 +12,9 @@ public class Damage : MonoBehaviour
 
     [SerializeField] private float invulnerabilitiDuration;
     [SerializeField] private float Vietnameseflasback;
+    [SerializeField] private AudioClip hurt;
+    [SerializeField] private AudioClip die;
+    [SerializeField] private Transform respawn;
     private SpriteRenderer spriteRender;
 
     public BarHealth healthbar;
@@ -34,6 +37,7 @@ public class Damage : MonoBehaviour
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
+            Audio.instance.PlaySound(hurt);
             StartCoroutine(Invunerability());
         }
         else
@@ -43,6 +47,9 @@ public class Damage : MonoBehaviour
                 anim.SetTrigger("die");
                 GetComponent<move>().enabled = false;
                 dead = true;
+                Audio.instance.PlaySound(die);
+                
+                Respawn();
             }
         }
     }
@@ -67,6 +74,19 @@ public class Damage : MonoBehaviour
         }
 
         Physics2D.IgnoreLayerCollision(8, 9, false);
+    }
+    public void Respawn()
+    {
+       
+        dead = false;
+        GetComponent<move>().enabled = true;
+        currentHealth = maxHealth;
+        healthbar.SetMaxHealth(maxHealth);
+        anim.ResetTrigger("die");
+        anim.Play("Idle");
+        StartCoroutine(Invunerability());
+        this.transform.position = respawn.position;
+
     }
 
 }

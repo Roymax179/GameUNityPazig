@@ -35,6 +35,10 @@ public class Fireball : MonoBehaviour
         hit= true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
+        if(collision.tag=="Enemy")
+        {
+            collision.GetComponent<EnemyHP>().TakeDamage(200);
+        }
     }
 
     public void SetDirection(float _direction)

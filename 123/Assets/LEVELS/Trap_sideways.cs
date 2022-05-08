@@ -5,7 +5,7 @@ using UnityEngine;
 public class Trap_sideways : MonoBehaviour
 {
     [SerializeField] private int damage;
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -29,9 +29,11 @@ public class Trap_sideways : MonoBehaviour
     {
         if (movingleft)
         {
-            if(transform.position.x>leftEdge)
+            
+            if (transform.position.x>leftEdge)
             {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
+
             }
             else
             {
@@ -40,6 +42,7 @@ public class Trap_sideways : MonoBehaviour
         }
         else
         {
+            
             if (transform.position.x < rightEdge)
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
