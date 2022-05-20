@@ -16,7 +16,7 @@ public class Damage : MonoBehaviour
     [SerializeField] private AudioClip die;
     [SerializeField] private Transform respawn;
     private SpriteRenderer spriteRender;
-
+    private bool invulnerable;
     public BarHealth healthbar;
     void Start()
     {
@@ -27,11 +27,14 @@ public class Damage : MonoBehaviour
     }
     void Update()
     {
-  
+    
     }
    public void TakeDamage(int damage)
     {
-
+        if(invulnerable)
+        {
+            return;
+        }
         currentHealth -= damage;
         healthbar.SetHealth(currentHealth);
         if (currentHealth > 0)
@@ -64,6 +67,7 @@ public class Damage : MonoBehaviour
     }
     private IEnumerator Invunerability()
     {
+        invulnerable = true;
         Physics2D.IgnoreLayerCollision(8, 9, true);
         for(int i = 0; i < Vietnameseflasback; i++)
         {
@@ -74,6 +78,7 @@ public class Damage : MonoBehaviour
         }
 
         Physics2D.IgnoreLayerCollision(8, 9, false);
+        invulnerable=false;
     }
     public void Respawn()
     {

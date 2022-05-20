@@ -37,7 +37,7 @@ public class Fireball : MonoBehaviour
         anim.SetTrigger("explode");
         if(collision.tag=="Enemy")
         {
-            collision.GetComponent<EnemyHP>().TakeDamage(200);
+            collision.GetComponent<EnemyHP>().TakeDamage(25);
         }
     }
 

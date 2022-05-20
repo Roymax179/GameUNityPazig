@@ -21,16 +21,16 @@ public class Attack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(1) && cooldownTimer > attackCooldown && movement.canAttack())
+        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && movement.canAttack())
         {
             playerAttack();
         }
-        if (Input.GetMouseButton(0) && meleeTimer > meleeCooldown && movement.canAttack())
-        {
-            playerMeleeAttack();
-        }
+        //if (Input.GetMouseButton(1) && meleeTimer > meleeCooldown && movement.canAttack())
+        //{
+        //    playerMeleeAttack();
+        //}
         cooldownTimer += Time.deltaTime;
-        meleeTimer += Time.deltaTime;
+        //meleeTimer += Time.deltaTime;
     }
 
     private void playerAttack()
