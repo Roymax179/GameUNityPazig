@@ -97,57 +97,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 1748}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 1874}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 1934}
+      Script: {instanceID: 2086}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2326}
     - Class: 114
-      Script: {instanceID: 2362}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2652}
+      Script: {instanceID: 2804}
     - Class: 114
-      Script: {instanceID: 2700}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 2736}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 2912}
+      Script: {instanceID: 3064}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 3114}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 3164}
     - Class: 114
-      Script: {instanceID: 3116}
+      Script: {instanceID: 3268}
     - Class: 114
-      Script: {instanceID: 3154}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 3404}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3740}
+      Script: {instanceID: 3892}
     - Class: 114
-      Script: {instanceID: 3746}
+      Script: {instanceID: 3898}
     - Class: 114
-      Script: {instanceID: 3888}
+      Script: {instanceID: 4040}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 4446}
+      Script: {instanceID: 4598}
     - Class: 114
-      Script: {instanceID: 4596}
+      Script: {instanceID: 4746}
     - Class: 114
-      Script: {instanceID: 4852}
+      Script: {instanceID: 5002}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 5242}
     - Class: 114
-      Script: {instanceID: 5376}
+      Script: {instanceID: 5526}
     - Class: 114
-      Script: {instanceID: 5450}
+      Script: {instanceID: 5600}
     - Class: 114
-      Script: {instanceID: 5722}
+      Script: {instanceID: 5872}
     - Class: 114
-      Script: {instanceID: 5896}
+      Script: {instanceID: 6046}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -198,31 +198,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1658}
     - Class: 114
-      Script: {instanceID: 1874}
+      Script: {instanceID: 2026}
     - Class: 114
-      Script: {instanceID: 2290}
+      Script: {instanceID: 2442}
     - Class: 114
-      Script: {instanceID: 2298}
+      Script: {instanceID: 2450}
     - Class: 114
-      Script: {instanceID: 2736}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 2912}
+      Script: {instanceID: 3064}
     - Class: 114
-      Script: {instanceID: 3154}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 3404}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3534}
+      Script: {instanceID: 3686}
     - Class: 114
-      Script: {instanceID: 4802}
+      Script: {instanceID: 4952}
     - Class: 114
-      Script: {instanceID: 4966}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 5242}
     - Class: 114
-      Script: {instanceID: 5372}
+      Script: {instanceID: 5522}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1102,4 +1102,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/LEVELS/MainMenu.unity
   - Assets/LEVELS/Lv1.unity
-  playerPath: F:/GIT/Game/GameUNityPazig/Game/STUDENTS_GAME.exe
+  playerPath: C:/Users/aleks/OneDrive/Pulpit/repo/GameUNityPazig/NEW GAME/STUDENTS_GAME.exe
